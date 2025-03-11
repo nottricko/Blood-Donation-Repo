@@ -1,0 +1,11 @@
+.contact-page {
+    background: linear-gradient(to bottom, #d32f2f, #b71c1c);
+    color: white;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
