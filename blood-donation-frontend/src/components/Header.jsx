@@ -1,62 +1,27 @@
 import React from "react";
-import logo from "../pictures/logo-blooddonation.png";
+import logo from "../pictures/blood-donation-logo.png";
+import "../styles/Header.css";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header style={styles.header}>
-      <a href="/" style={styles.logoContainer}>
-        <img src={logo} alt="Logo" style={styles.logo} />
-        <span style={styles.title}>Blood Donation</span>
-      </a>
-      <nav>
-        <ul style={styles.navList}>
-          <li><a href="/about" style={styles.link}>About Us</a></li>
-          <li><a href="/contact" style={styles.link}>Contact Us</a></li>
-          <li><a href="/login" style={styles.link}>Login</a></li>
-        </ul>
-      </nav>
+    <header className="blood-donation-header">
+        <div className="blood-donation-header-logo">
+          <img src={logo} alt="Logo" className="logo" />
+          <div className="logo-text-group">
+            <span className="logo-line-1">BLOOD DONATION</span>
+            <span className="logo-line-2">MANAGEMENT SYSTEM</span>
+          </div>
+        </div>
+      <nav className="nav-bar">
+      <NavLink to="/" className="blood-donation-header-nav" activeclassname="active">HOME</NavLink>
+      <NavLink to="/request" className="blood-donation-header-nav" activeclassname="active">REQUEST BLOOD</NavLink>
+      <NavLink to="/donate" className="blood-donation-header-nav" activeclassname="active">DONATE BLOOD</NavLink>
+      <NavLink to="/about" className="blood-donation-header-nav" activeclassname="active">ABOUT US</NavLink>
+      <NavLink to="/login" className="login-button" activeclassname="active">LOGIN</NavLink>
+    </nav>
     </header>
   );
-};
-
-const styles = {
-  header: {
-    background: "white",
-    color: "#d32f2f",
-    padding: "20px 20px",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    borderBottom: "2px solid #d32f2f",
-  },
-  logoContainer: {
-    display: "flex",
-    alignItems: "center",
-    textDecoration: "none",
-  },
-  logo: {
-    width: "40px",
-    height: "40px",
-    marginRight: "10px",
-  },
-  title: {
-    color: "#d32f2f",
-    fontSize: "24px",
-    fontWeight: "bold",
-  },
-  navList: {
-    listStyle: "none",
-    padding: 0,
-    margin: 0,
-    display: "flex",
-    gap: "20px",
-  },
-  link: {
-    color: "#d32f2f",
-    textDecoration: "none",
-    fontSize: "16px",
-    fontWeight: "bold",
-  },
 };
 
 export default Header;

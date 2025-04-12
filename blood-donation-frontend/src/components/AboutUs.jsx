@@ -2,6 +2,7 @@ import { Container, Typography } from "@mui/material";
 import Header from "./Header";
 import "../styles/AboutUs.css";
 
+
 const AboutUs = () => {
   return (
     <>
