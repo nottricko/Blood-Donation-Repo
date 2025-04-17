@@ -1,6 +1,6 @@
-package com.dioquino.demo.Repository;
+package com.blood_donation_backend.Repository;
 
-import com.dioquino.demo.Entity.DonorEntity;
+import com.blood_donation_backend.Entity.DonorEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

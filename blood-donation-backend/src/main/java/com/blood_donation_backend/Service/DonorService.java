@@ -1,7 +1,7 @@
-package com.dioquino.demo.service;
+package com.blood_donation_backend.Service;
 
-import com.dioquino.demo.Entity.DonorEntity;
-import com.dioquino.demo.Repository.DonorRepository;
+import com.blood_donation_backend.Entity.DonorEntity;
+import com.blood_donation_backend.Repository.DonorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

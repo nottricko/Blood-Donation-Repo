@@ -1,13 +1,17 @@
-package com.dioquino.demo.Repository;
+package com.blood_donation_backend.Repository;
 
-import com.dioquino.demo.Entity.UserEntity;
+import com.blood_donation_backend.Entity.UserEntity;
 import org.hibernate.type.descriptor.converter.spi.JpaAttributeConverter;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 @Repository
 public interface UserRepository extends JpaRepository<UserEntity, Integer> {
 
-    UserEntity findByUserId(int userId);
+    Optional<UserEntity> findByEmail(String email);
+    Optional <UserEntity> findByFirebaseUid(String firebaseUid);
+    boolean existsByEmail(String email);
 
 }
