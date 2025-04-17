@@ -1,4 +1,4 @@
-package com.dioquino.demo.controller;
+package com.blood_donation_backend.Controller;
 
 import com.dioquino.demo.Entity.RecipientEntity;
 import com.dioquino.demo.service.RecipientService;
