@@ -1,4 +1,4 @@
-package com.dioquino.demo.Entity;
+package com.blood_donation_backend.Entity;
 
 import jakarta.persistence.*;
 import java.util.Date;

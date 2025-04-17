@@ -1,4 +1,5 @@
-package com.dioquino.demo.Entity;
+package com.blood_donation_backend.Entity;
+
 
 import jakarta.persistence.*;
 import java.util.List;
@@ -16,6 +17,9 @@ public class UserEntity {
     private String email;
     private String contactNumber;
     private String address;
+    private String password;
+    @Column(name = "firebase_uid" , unique = true)
+    private String firebaseUid;
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private DonorEntity donor;
@@ -27,13 +31,14 @@ public class UserEntity {
     public UserEntity() {}
 
     // Constructor for easy Postman testing
-    public UserEntity(String firstName, String lastName, String email, String contactNumber, String address) {
+    public UserEntity(String firstName, String lastName, String email, String contactNumber, String address, String password) {
         super();
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.contactNumber = contactNumber;
         this.address = address;
+        this.password = password;
     }
 
     // Getters and Setters
@@ -47,6 +52,14 @@ public class UserEntity {
     public String getLastName() {
         return lastName;
     }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    public String getPassword() {
+        return password;
+    }
+
     public String getEmail() {
         return email;
     }
