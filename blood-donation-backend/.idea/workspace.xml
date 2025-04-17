@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="07495ee6-cee5-44a3-ad17-2adae559914d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Configure/FirebaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Controller/FirebaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/DTO/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/blood-donation-project-1e7ae-firebase-adminsdk-fbsvc-88c9fa04bf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Controller/DonorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Controller/DonorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Controller/RecipientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Controller/RecipientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Entity/DonorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Entity/DonorEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Entity/RecipientEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Entity/RecipientEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Repository/DonorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Repository/DonorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Repository/RecipientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Repository/RecipientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Service/DonorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Service/DonorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Service/RecipientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Service/RecipientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blood_donation_backend/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2vr0QABEPdFqpmhDiA5cmwtodCK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BloodDonationBackendApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dioquino-backend&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Blood-Donation-Repo/blood-donation-backend&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Blood-Donation-Repo\blood-donation-backend\src\main\resources" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07495ee6-cee5-44a3-ad17-2adae559914d" name="Changes" comment="" />
+      <created>1744887866588</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744887866588</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.beans.factory.UnsatisfiedDependencyException" package="org.springframework.beans.factory" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
