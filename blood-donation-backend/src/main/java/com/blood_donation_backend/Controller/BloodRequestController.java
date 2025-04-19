@@ -17,28 +17,16 @@ public class BloodRequestController {
     private BloodRequestService bloodRequestService;
 
     // Create a new blood request
+
     @PostMapping
     public ResponseEntity<BloodRequestEntity> createBloodRequest(@RequestBody BloodRequest bloodRequestDTO) {
-        BloodRequestEntity bloodRequestEntity = new BloodRequestEntity();
-
-        // Set fields from DTO to Entity
-        bloodRequestEntity.setPatientName(bloodRequestDTO.getPatientName());
-        bloodRequestEntity.setBloodType(bloodRequestDTO.getBloodType());
-        bloodRequestEntity.setRepresentativeName(bloodRequestDTO.getRepresentativeName());
-        bloodRequestEntity.setRepresentativeRelation(bloodRequestDTO.getRelationshipWithPatient());
-
-        // Use the requestDate from DTO or set it to current date if not provided
-        if (bloodRequestDTO.getRequestDate() != null) {
-            bloodRequestEntity.setRequestDate(bloodRequestDTO.getRequestDate());
-        } else {
-            bloodRequestEntity.setRequestDate(new Date());  // Set current date if no date provided
-        }
-
-
+        // Use the mapping method from the service to keep your controller clean
+        BloodRequestEntity bloodRequestEntity = bloodRequestService.mapDtoToEntity(bloodRequestDTO);
 
         // Save the request
         BloodRequestEntity savedBloodRequest = bloodRequestService.saveBloodRequest(bloodRequestEntity);
 
         return ResponseEntity.ok(savedBloodRequest);
     }
+
 }

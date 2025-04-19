@@ -16,7 +16,7 @@ public class FirebaseConfig {
     public FirebaseAuth firebaseAuth() throws Exception {
         // ✅ This loads the file from src/main/resources
         InputStream serviceAccount = getClass().getClassLoader()
-                .getResourceAsStream("blood-donation-project-1e7ae-firebase-adminsdk-fbsvc-2c85ec55e3.json");
+                .getResourceAsStream("blood-donation-project-1e7ae-firebase-adminsdk-fbsvc-d917185920.json");
 
         if (serviceAccount == null) {
             throw new IllegalStateException("Firebase service account file not found in resources");

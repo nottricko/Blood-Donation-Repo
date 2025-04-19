@@ -16,6 +16,7 @@ public class BloodRequestEntity {
     private String patientMedicalCondition;
     private String representativeName;
     private String representativeRelation;
+    private String email;
 
     @Lob
     private byte[] documentImage; // to store the image of the document
@@ -23,6 +24,14 @@ public class BloodRequestEntity {
     private Date requestDate;
 
     private String status = "Pending"; // New field for the status, initially set to Pending
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     // Getters and Setters
     public int getId() {
