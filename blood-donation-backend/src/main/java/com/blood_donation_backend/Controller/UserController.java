@@ -14,6 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/users")
+@CrossOrigin(origins = "http://localhost:3000")
 public class UserController {
 
     @Autowired
@@ -48,15 +49,28 @@ public class UserController {
         return ResponseEntity.noContent().build();
     }
 
-    @PostMapping("/login/manual")
-    public String manualLogin(@RequestBody LoginRequest loginRequest){
-        try{
-            UserEntity user = userService.loginUserWithCredentials(loginRequest.getEmail(), loginRequest.getPassword());
-                return "Login successful for user: " + user.getEmail();
-        }catch (IllegalArgumentException e){
-            return "Login failed: " + e.getMessage();
+    @PostMapping("/register")
+    public ResponseEntity<UserEntity> registerUser(@RequestBody UserEntity userEntity) {
+        try {
+            UserEntity savedUser = userService.saveUser(userEntity);
+            return ResponseEntity.ok(savedUser);
+        } catch (Exception e) {
+            e.printStackTrace(); // Log the exception to see the error
+            return ResponseEntity.status(400).body(null);
         }
     }
+
+
+    @PostMapping("/login/manual")
+    public ResponseEntity<String> manualLogin(@RequestBody LoginRequest loginRequest) {
+        try {
+            UserEntity user = userService.loginUserWithCredentials(loginRequest.getEmail(), loginRequest.getPassword());
+            return ResponseEntity.ok("Login successful for user: " + user.getEmail());
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.status(401).body("Login failed: " + e.getMessage());
+        }
+    }
+
 
     @PostMapping("/login/google")
     public String googleLogin(@RequestBody LoginRequest loginRequest) {
