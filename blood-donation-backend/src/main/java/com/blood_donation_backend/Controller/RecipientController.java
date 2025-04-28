@@ -17,21 +17,21 @@ public class RecipientController {
     @Autowired
     private RecipientService recipientService;
 
-    // Save or update recipient
+
     @PostMapping
     public ResponseEntity<RecipientEntity> saveRecipient(@RequestBody RecipientEntity recipientEntity) {
         RecipientEntity savedRecipient = recipientService.saveRecipient(recipientEntity);
         return ResponseEntity.ok(savedRecipient);
     }
 
-    // Get all recipients
+
     @GetMapping
     public ResponseEntity<List<RecipientEntity>> getAllRecipients() {
         List<RecipientEntity> recipients = recipientService.getAllRecipients();
         return ResponseEntity.ok(recipients);
     }
 
-    // Get recipient by ID
+
     @GetMapping("/{id}")
     public ResponseEntity<RecipientEntity> getRecipientById(@PathVariable int id) {
         Optional<RecipientEntity> recipient = recipientService.getRecipientById(id);
@@ -39,7 +39,7 @@ public class RecipientController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    // Find recipients by dateNeededBy
+    //Need pa i improve need best approach
     @GetMapping("/by-date/{dateNeededBy}")
     public ResponseEntity<List<RecipientEntity>> findRecipientsByDateNeededBy(@PathVariable @RequestBody Date dateNeededBy) {
         List<RecipientEntity> recipients = recipientService.findRecipientsByDateNeededBy(dateNeededBy);
@@ -49,7 +49,11 @@ public class RecipientController {
         return ResponseEntity.ok(recipients);
     }
 
-    // Delete recipient by ID
+
+
+
+
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteRecipient(@PathVariable int id) {
         recipientService.deleteRecipient(id);
