@@ -18,8 +18,7 @@ public class UserEntity {
     private String contactNumber;
     private String address;
     private String password;
-    @Column(name = "firebase_uid" , unique = true)
-    private String firebaseUid;
+
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private DonorEntity donor;

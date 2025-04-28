@@ -66,16 +66,4 @@ public class UserService {
         return user;
     }
 
-    public UserEntity loginUserWithGoogle(String idToken) throws FirebaseAuthException {
-        FirebaseToken decodedToken = FirebaseAuth.getInstance().verifyIdToken(idToken);
-        String uid = decodedToken.getUid();
-
-        Optional<UserEntity> user = userRepository.findByFirebaseUid(uid);
-
-        if (user.isPresent()) {
-            return user.get(); // Return the found user
-        } else {
-            throw new IllegalArgumentException("User not found in database");
-        }
-    }
 }

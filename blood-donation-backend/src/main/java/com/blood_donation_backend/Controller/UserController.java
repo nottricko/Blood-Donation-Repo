@@ -72,15 +72,4 @@ public class UserController {
     }
 
 
-    @PostMapping("/login/google")
-    public String googleLogin(@RequestBody LoginRequest loginRequest) {
-        try {
-            UserEntity user = userService.loginUserWithGoogle(loginRequest.getIdToken());
-            return "Login successful for user: " + user.getEmail();
-        } catch (FirebaseAuthException e) {
-            return "Firebase Auth failed: " + e.getMessage();
-        } catch (IllegalArgumentException e) {
-            return "Login failed: " + e.getMessage();
-        }
-    }
 }
