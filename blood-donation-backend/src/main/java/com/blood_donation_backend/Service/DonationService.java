@@ -31,11 +31,11 @@ public class DonationService {
         return optional.orElse(null);
     }
 
-    // Update
+// Update
     public DonationEntity updateDonation(int id, DonationEntity newData) {
         DonationEntity existing = getDonationById(id);
         if (existing != null) {
-            existing.setDonorId(newData.getDonorId());
+            existing.setDonor(newData.getDonor()); // SET the whole DonorEntity, not donorId
             existing.setRecipientId(newData.getRecipientId());
             existing.setDonationDate(newData.getDonationDate());
             existing.setStatus(newData.getStatus());
@@ -43,7 +43,6 @@ public class DonationService {
         }
         return null;
     }
-
     // Delete
     public String deleteDonation(int id) {
         DonationEntity donation = getDonationById(id);

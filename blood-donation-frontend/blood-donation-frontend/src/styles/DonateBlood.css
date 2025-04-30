@@ -1,0 +1,24 @@
+.donate-page {
+    text-align: center;
+    padding-top: 40px;
+  }
+  
+  .donate-title {
+    color: #e50914;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .donate-subtitle {
+    margin-bottom: 30px;
+    color: black;
+  }
+  
+  .donate-form {
+    margin-top: 30px;
+  }
+  
+  .MuiAlert-root {
+    margin-top: 10px;
+  }
+  

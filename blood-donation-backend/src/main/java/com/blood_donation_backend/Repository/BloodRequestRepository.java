@@ -1,12 +1,13 @@
 package com.blood_donation_backend.Repository;
 
 
-import com.blood_donation_backend.Entity.BloodRequestEntity;
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-import java.util.Optional;
+import com.blood_donation_backend.Entity.BloodRequestEntity;
 
 @Repository
 public interface BloodRequestRepository extends JpaRepository<BloodRequestEntity, Long> {

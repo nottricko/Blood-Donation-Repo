@@ -6,6 +6,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -16,7 +18,10 @@ public class DonationEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int donationId;
 
-    private int donorId;
+    @ManyToOne
+    @JoinColumn(name = "donor_id")
+    private DonorEntity donor;
+    
     private int recipientId;
 
     private LocalDate donationDate;
@@ -36,14 +41,14 @@ public class DonationEntity {
         this.donationId = donationId;
     }
 
-    public int getDonorId() {
-        return donorId;
+    public DonorEntity getDonor() {
+        return donor;
     }
-
-    public void setDonorId(int donorId) {
-        this.donorId = donorId;
+    
+    public void setDonor(DonorEntity donor) {
+        this.donor = donor;
     }
-
+    
     public int getRecipientId() {
         return recipientId;
     }
